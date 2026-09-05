@@ -1,0 +1,19 @@
+{
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++20",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.executorMap": {
+        "c": "cd \"$(cygpath -u \"$dir\")\" && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" && timeout 15s ./$fileNameWithoutExt.exe < ./input.txt > ./output.txt; exitCode=$?; if [ $exitCode -eq 124 ]; then echo 'Time Limit Exceeded' > ./output.txt; fi",
+        "cpp": "cd \"$(cygpath -u \"$dir\")\" && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" && timeout 15s ./$fileNameWithoutExt.exe < ./input.txt > ./output.txt; exitCode=$?; if [ $exitCode -eq 124 ]; then echo 'Time Limit Exceeded' > ./output.txt; fi",
+        "javascript": "node",
+        "python": "python -u",
+        "java": "cd \"$(cygpath -u \"$dir\")\" && javac \"$fileName\" && java \"$fileNameWithoutExt\"",
+        "go": "go run",
+        "rust": "cd \"$(cygpath -u \"$dir\")\" && rustc \"$fileName\" -o \"$fileNameWithoutExt.exe\" && ./$fileNameWithoutExt.exe"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 20,
+    "editor.tabSize": 4
+}
