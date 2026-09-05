@@ -2,12 +2,16 @@
 
 #include <stdio.h>
 
- int main() {
-     int a = 10,
-      b = 20,
-       sum;
-        sum = a + b;
-     printf("Sum: %d\n", sum);
+int main(){
 
-     return 0;   
- }
+    int a;
+
+    scanf("%d", &a);
+
+    printf("You entered: %d\n", a);
+
+    return 0;
+}
+
+
+    
