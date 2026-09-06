@@ -1,13 +1,11 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-int main()
-{
-     int a,b,sum;
-    printf("Enter two integers: ");
-    scanf("%d %d",&a,&b);
+int main(){
+    bool b=true;
+    printf("%d", b);
 
-    sum = a + b;
-    printf("%d * %d = %d",a,b,sum);
 
-    return 0;
+
+
 }
